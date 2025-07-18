@@ -3,119 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeFinity - Cardápios Web Profissionais</title>
+    <meta name="description" content="CodeFinity - Desenvolvimento de páginas web profissionais para restaurantes e estabelecimentos comerciais">
+    <title>CodeFinity - Páginas Web Profissionais para Restaurantes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="min-h-screen">
-        <!-- Hero Section -->
-        <header class="hero">
-            <nav class="container">
-                <div class="logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
-                    <span>CodeFinity</span>
-                </div>
-                <div class="nav-links">
-                    <a href="#about">Sobre</a>
-                    <a href="#portfolio">Portfólio</a>
-                    <a href="#contact">Contato</a>
-                </div>
-            </nav>
-            
-            <div class="hero-content container">
-                <h1>Cardápios Digitais Inovadores</h1>
-                <p>Transforme a experiência dos seus clientes com cardápios web modernos e interativos</p>
-                <a href="#contact" class="cta-button">Fale Conosco</a>
+    <!-- Cabeçalho -->
+    <header class="hero">
+        <nav class="container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/>
+                </svg>
+                <span>CodeFinity</span>
             </div>
-        </header>
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#portfolio" class="nav-link">Serviços</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+        </nav>
+        
+        <div class="hero-content container">
+            <h1>Páginas Web Inovadoras para seu Negócio</h1>
+            <p class="hero-subtitle">Transforme a experiência dos seus clientes com soluções digitais, modernas e interativas.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button primary">Fale Conosco</a>
+                <a href="https://portifolio-arielsouzasilva.netlify.app/" class="cta-button secondary">Ver Portfólio</a>
+            </div>
+        </div>
+    </header>
 
-        <!-- About Section -->
-        <section id="about" class="about">
+    <main>
+        <!-- Seção Sobre -->
+        <section id="about" class="about section-padding">
             <div class="container">
-                <h2>Por que escolher a CodeFinity?</h2>
+                <h2 class="section-title">Por que escolher a <span>CodeFinity</span>?</h2>
+                <p class="section-subtitle">Soluções digitais personalizadas para o seu negócio gastronômico</p>
+                
                 <div class="features">
-                    <div class="feature">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 7h10"/><path d="M7 12h10"/><path d="M7 17h10"/></svg>
-                        <h3>Design Intuitivo</h3>
-                        <p>Cardápios fáceis de navegar e atualizar, proporcionando a melhor experiência para seus clientes</p>
-                    </div>
-                    <div class="feature">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-                        <h3>Acesso Universal</h3>
-                        <p>(EM BREVE) seus cardápios acessíveis de qualquer dispositivo, em qualquer lugar</p>
-                    </div>
-                    <div class="feature">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                        <h3>Suporte Dedicado</h3>
-                        <p>Equipe especializada para ajudar você em todas as etapas</p>
-                    </div>
+                    <article class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Design Responsivo</h3>
+                        <p>Cardápios adaptáveis a qualquer dispositivo, garantindo a melhor experiência para seus clientes.</p>
+                    </article>
+                    
+                    <article class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Atualização Instantânea</h3>
+                        <p>Altere preços, itens e promoções em tempo real sem custos adicionais.</p>
+                    </article>
+                    
+                    <article class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-whatsapp"></i>
+                        </div>
+                        <h3>Integração com WhatsApp</h3>
+                        <p>Seus clientes podem fazer pedidos diretamente pelo WhatsApp com um clique.</p>
+                    </article>
+                    
+                    <article class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Relatórios de Acesso</h3>
+                        <p>(EM BREVE) Acompanhe métricas de acesso e comportamento dos clientes.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio">
+        <!-- Seção Portfólio -->
+        <section id="portfolio" class="portfolio section-padding">
             <div class="container">
-                <h2>Nosso Portfólio</h2>
-                <div class="portfolio-grid">
-                  <div class="portfolio-item">
-                    <a href="https://steak-house-burguer.netlify.app/" target="_blank">
-                        <img src="https://i.ibb.co/SXgMJQ3x/image.png" alt="Restaurante Exemplo">
-                    </a>
-                    <div class="portfolio-content">
-                        <h3>STEAK-BURGUER</h3>
-                        <p>Cardápio Web completo com categorias dos pratos</p>
-                    </div>
-                </div>
+                <h2 class="section-title">Nossos <span>Trabalhos</span></h2>
+                <p class="section-subtitle">Confira alguns dos cardápios digitais que desenvolvemos</p>
                 
-                    <div class="portfolio-item">
-                        <a href="https://sabor-e-brasa.netlify.app/" target="_blank">
-                        <img src="sabor-brasa.png" alt="Hamburgueria Sabor e Brasa">
+                <div class="portfolio-grid">
+                    <article class="portfolio-item">
+                        <a href="https://steak-house-burguer.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="https://i.ibb.co/SXgMJQ3x/image.png" alt="Cardápio digital Steak Burguer" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
                         </a>
                         <div class="portfolio-content">
-
-                            <h3>Sabor e Brasa</h3>
-                            <p>Cardápio Web completo, pedidos enviados via whatsapp.</p>
+                            <h3>STEAK BURGUER</h3>
+                            <p>Cardápio Web completo com categorias de pratos e integração com WhatsApp.</p>
+                            <a href="https://steak-house-burguer.netlify.app/" target="_blank" rel="noopener noreferrer" class="portfolio-link">Visitar Site <i class="fas fa-arrow-right"></i></a>
                         </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="https://black-burger.netlify.app/" target="_blank">
-                        <img src="black-brugão.png" alt="Black Burgão">
+                    </article>
+                    
+                    <article class="portfolio-item">
+                        <a href="https://casa-do-hamburguer.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="casas-do-hamburger.png" alt="Cardápio digital Casa do Hamburguer" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <h3>Casa do Hamburguer</h3>
+                            <p>Cardápio Web completo com sistema de pedidos via WhatsApp.</p>
+                            <a href="https://casa-do-hamburguer.netlify.app/" target="_blank" rel="noopener noreferrer" class="portfolio-link">Visitar Site <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-item">
+                        <a href="https://sabor-e-brasa.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="sabor-brasa.png" alt="Cardápio digital Sabor e Brasa" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
+                        </a>
+                        <div class="portfolio-content">
+                            <h3>Sabor e Brasa</h3>
+                            <p>Cardápio digital com fotos profissionais e destaque para combos.</p>
+                            <a href="https://sabor-e-brasa.netlify.app/" target="_blank" rel="noopener noreferrer" class="portfolio-link">Visitar Site <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="portfolio-item">
+                        <a href="https://black-burger.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="black-brugão.png" alt="Cardápio digital Black Burgão" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-external-link-alt"></i>
+                            </div>
                         </a>
                         <div class="portfolio-content">
                             <h3>Black Burgão</h3>
-                            <p>Cardápio Web completo com categorias dos pratos.</p>
+                            <p>Cardápio Web moderno com categorias e descrições detalhadas.</p>
+                            <a href="https://black-burger.netlify.app/" target="_blank" rel="noopener noreferrer" class="portfolio-link">Visitar Site <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <h2 class="section-title">Vamos <span>Conversar</span></h2>
+                <p class="section-subtitle">Entre em contato para solicitar um orçamento ou tirar dúvidas</p>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <a href="https://wa.me/5561981227195" target="_blank" rel="noopener noreferrer">(61) 98122-7195</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:contato@codefinity.com.br">contato@codefinity.com.br</a>
+                            </div>
                         </div>
                     </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="cta-button primary">Enviar Mensagem</button>
+                    </form>
                 </div>
             </div>
         </section>
+    </main>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Entre em Contato</h2>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                          <a href="https://wa.me/5561981227195" target="_blank" rel="noopener noreferrer" >CodeFinity</a>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/>
+                        </svg>
+                        <span>CodeFinity</span>
                     </div>
-
+                    <p>Soluções digitais para o seu negócio gastronômico.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/5561981227195" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Receba Novidades</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu melhor email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
                 </div>
             </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="footer-logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
-                    <span>CodeFinity</span>
-                </div>
+            
+            <div class="footer-bottom">
                 <p>&copy; <span id="year"></span> CodeFinity. Todos os direitos reservados.</p>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
